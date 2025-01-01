@@ -9,9 +9,9 @@ Feel free to explore the project, contribute, or use it as a reference!
 ## Features
 
 - User-friendly React interface
-- Real-time updates and interactivity (you can describe any specific features here)
+- Real-time updates and interactivity 
 - Responsive design for mobile and desktop users
-- (Add any other notable features of your project)
+  
 
 ## Installation
 
