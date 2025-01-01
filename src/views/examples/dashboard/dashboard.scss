@@ -1,0 +1,43 @@
+.recent-transactions {
+  .my-card {
+    background-color: #fff5d9;
+  }
+  .paypal {
+    background-color: #e7edff;
+  }
+  .adhoc {
+    background-color: #dcfaf8;
+  }
+}
+
+.quick-transfer {
+  .user-card {
+    transition: all 0.3s ease;
+  }
+
+  .selected .user-name,
+  .selected .user-role {
+    font-weight: bold; /* Make the selected user's name and role bold */
+    text-shadow: 2px 2px 8px rgba(0, 123, 255, 0.6); /* Add text shadow to name and role */
+  }
+
+  .user-name,
+  .user-role {
+    transition: text-shadow 0.3s ease; /* Smooth transition for the shadow */
+  }
+
+  .user-card:hover .user-name,
+  .user-card:hover .user-role {
+    text-shadow: 2px 2px 8px rgba(0, 123, 255, 0.5); /* Add hover effect shadow */
+  }
+
+  .user-card:hover {
+    opacity: 0.8;
+  }
+}
+
+.slick-next:before {
+  margin-left: -20px;
+  font-size: 1.5rem !important;
+  color: #718ebf !important;
+}

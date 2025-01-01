@@ -1,0 +1,42 @@
+.credit-card {
+  position: relative;
+  border-radius: 25px;
+  background: linear-gradient(107.38deg, #5b5a6f 2.61%, #000000 101.2%);
+  overflow: hidden;
+  color: white;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  .label {
+    color: #ffffffb2;
+  }
+  .card-footer {
+    background: linear-gradient(107.38deg, #d1d0d7 2.61%, #000000 101.2%);
+  }
+}
+
+.debit-card {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: white;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  color: #343c6a;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  .label {
+    color: #718ebf;
+  }
+}
+
+.credit-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(107.38deg, #5b5a6f 2.61%, #000000 101.2%);
+  z-index: -1; /* Keeps the gradient behind the card content */
+  border-radius: inherit; /* Matches the border-radius of the card */
+}
