@@ -4,7 +4,7 @@
 
 ## Live Application URL
 
-### https://ornate-eclair-3f0b05.netlify.app/admin/index
+### https://ornate-eclair-3f0b05.netlify.app
 This URL has the application deployed in
 
 ## Prerequisites
