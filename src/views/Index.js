@@ -7,17 +7,11 @@ import { Container, Row, Col } from "reactstrap";
 import { chartOptions, parseOptions } from "variables/charts.js";
 
 import DashboardCard from "./examples/dashboard/DashboardCards";
-
-import chipCardWhite from "../assets/img/icons/chip_card_white.png";
-import chipCardBlack from "../assets/img/icons/chip_card_black.png";
-import creditCardBrand from "../assets/img/icons/cc_company.png";
-import debitCardBrand from "../assets/img/icons/dc_company.png";
 import RecentTransactions from "./examples/dashboard/RecentTransactions";
 import WeeklyActivity from "./examples/dashboard/WeeklyActivity";
 import ExpenseStatistics from "./examples/dashboard/ExpenseStatistics";
 import QuickTransfer from "./examples/dashboard/QuickTransfer";
 import BalanceHistory from "./examples/dashboard/BalanceHistory";
-import ApiService from "services/api.service";
 import DashboardService from "services/dashboard.service";
 
 const Index = (props) => {
