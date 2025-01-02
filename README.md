@@ -11,7 +11,11 @@ Feel free to explore the project, contribute, or use it as a reference!
 - User-friendly React interface
 - Real-time updates and interactivity 
 - Responsive design for mobile and desktop users
-  
+
+### Prerequisites
+
+- Node.js (v18.x or higher)
+- npm (v10.x or higher)
 
 ## Installation
 
@@ -23,3 +27,5 @@ Start by cloning this repository to your local machine. You can do this by runni
 
 ```bash
 git clone https://github.com/rohan202c/soar-assignment.git
+
+### 2. Navigate to the project directory
