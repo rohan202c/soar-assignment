@@ -47,7 +47,7 @@ const Index = (props) => {
                 <div className="h2">My Cards</div>
                 <div>
                   <a
-                    href="https://www.google.com/"
+                    href="#"
                     onClick={toggleShowAll}
                     className="font-weight-600 text-sm"
                     style={{ cursor: "pointer" }}
