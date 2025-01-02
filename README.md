@@ -242,9 +242,67 @@ The `Settings.js` component allows users to manage their profile settings, inclu
 - **classNames**: To toggle active class names for tab navigation.
 - **FileReader API**: To handle image uploads and display a preview.
 
-## Sample Flow:
-1. On component mount, user data is fetched from the API.
-2. User can edit their profile information.
-3. The profile image can be uploaded and previewed in real-time.
-4. The form is submitted, and a toast message confirms the result.
+#### Constants
+
+# ToastType Constant
+
+The `ToastType` constant defines the types of toast notifications available in the application. It is used to classify the different types of messages that the user can receive when performing actions, such as saving data or encountering an error.
+
+## Toast Types:
+
+- **SUCCESS**: Used for success messages (e.g., successful form submission or update).
+- **ERROR**: Used for error messages (e.g., failed form submission or image upload).
+- **INFO**: Used for informational messages (e.g., warnings or general info).
+
+# TRANSACTION_SOURCE_TYPE Constant
+
+The `TRANSACTION_SOURCE_TYPE` constant defines the different types of transaction sources available in the application. It is used to categorize the origin of a transaction, allowing the system to handle different payment methods appropriately.
+
+## Transaction Source Types:
+
+- **CARD** (`0`): Represents transactions made via credit or debit card.
+- **PAYPAL** (`1`): Represents transactions made through PayPal.
+- **ADHOC** (`2`): Represents ad-hoc or one-time transactions, typically not tied to a standard payment method.
+
+
+#### Services
+
+# ApiService Module
+
+The `ApiService` module provides a flexible API client that simplifies making HTTP requests using `axios`. It is configured to interact with the mock API service and includes custom extensions for handling cache and pending requests.
+
+## Features:
+- **Base URL**: The service is set to interact with `https://run.mocky.io/v3/` by default.
+- **Content-Type**: All requests are sent with the `Content-Type` header set to `application/json`.
+- **Custom Methods**: In addition to the standard HTTP methods (GET, POST, PUT, DELETE, etc.), custom methods are added for cache management and pending request handling.
+
+## Methods:
+
+### Standard HTTP Methods:
+- **request**: Makes a custom HTTP request.
+- **get**: Performs a GET request.
+- **head**: Performs a HEAD request.
+- **delete**: Performs a DELETE request.
+- **options**: Performs an OPTIONS request.
+- **put**: Performs a PUT request.
+- **post**: Performs a POST request.
+- **patch**: Performs a PATCH request.
+
+### Custom Extensions:
+- **clearAllCache**: Clears the cache (logs a message indicating the cache is cleared).
+- **clearAllPendingRequests**: Clears any pending requests (logs a message indicating the requests are cleared).
+
+
+# UserService Module
+
+The `UserService` module provides functions to interact with user data. It uses the `ApiService` for making HTTP requests to retrieve and update user information.
+
+# ToastService Module
+
+The `ToastService` module provides a custom hook to manage and display toast notifications in your React application. It supports different types of toasts, including success, error, and informational messages.
+
+# DashboardService Module
+
+The `DashboardService` module provides an abstraction for interacting with the API endpoints related to dashboard data, including card information, recent transactions, weekly activity, expense statistics, quick transfer users, and balance history.
+
 
