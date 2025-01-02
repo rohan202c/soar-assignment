@@ -151,15 +151,6 @@ The `WeeklyActivity.js` component is a React component that displays a bar chart
 - **Chart Customization:** The chart is customized with labels, tooltips, and options like step size, grid lines, and legend positioning to improve clarity and user experience.
 - **Responsive Layout:** The chart adjusts to the container, making it responsive on different screen sizes.
 
-## Data Structure:
-The component expects the following data structure for the weekly activity:
-
-```json
-{
-  "deposit": [amounts for Sat, Sun, Mon, Tue, Wed, Thu, Fri],
-  "withdraw": [amounts for Sat, Sun, Mon, Tue, Wed, Thu, Fri]
-}
-
 
 # ExpenseStatistics Component
 
@@ -170,12 +161,6 @@ The `ExpenseStatistics.js` component is a React component that displays a pie ch
 - **API Integration:** Fetches the expense statistics data via `DashboardService.getExpenseStatistics()` when the component is mounted.
 - **Chart Customization:** Customizes the pie chart with specific colors for each category and tooltips that show the expense value on hover.
 - **Responsive Layout:** The chart is responsive and adjusts its size accordingly.
-
-## Data Structure:
-The component expects the following structure for the expense data:
-
-```json
-[entertainmentAmount, billExpenseAmount, investmentAmount, otherAmount]
 
 
 # QuickTransfer Component
